@@ -232,6 +232,11 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 .las{
   background-color: orange;
@@ -288,12 +293,12 @@ body {
   list-style-type: none;
 }
 .sat{
-  padding-right: 200px;
+  /* padding-right: 200px;
   padding-bottom: 200px;
   margin-top: -5px;
-  margin-bottom: -300px;
+  margin-bottom: -300px; */
   list-style-type: none;
-   padding-left: 0; 
+   /* padding-left: 0;  */
    text-align: center;
 }
 .met{
@@ -354,6 +359,154 @@ footer{
 }
 .letty{
   margin-top: -30px;
+}
+@media (max-width: 768px) {
+  body {
+    background-position: top right;
+    background-size: 250px;
+    overflow-x: hidden;
+  }
+
+  .g-container,
+  .container,
+  .tas,
+  .testimonial,
+  .feature-list,
+  .bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .g-container {
+    padding: 50px;
+  }
+
+  .image {
+    padding: 10px;
+  }
+
+  nav.bar {
+    /* flex-direction: column; */
+    gap: 15px;
+  }
+
+  .get-started-btn {
+    margin-top: 10px;
+  }
+
+  .container-text h1 {
+    font-size: 22px;
+  }
+
+  .container-text p {
+    font-size: 14px;
+  }
+
+  .container img {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .feature-item {
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature-number {
+    margin-bottom: 10px;
+  }
+  .feature{
+    margin-bottom: -20px;
+    top: 500px;
+  }
+  .feature-list{
+    margin-top: 50px;
+  }
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tas {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .sat,
+  .met {
+    padding: 0;
+    margin: 0px;
+  }
+
+  .sat li,
+  .met li {
+    list-style: none;
+    margin: 10px 10px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .met li{
+    margin-left: 100px;
+  }
+  .sat li{
+    margin-right: 220px;
+    margin-bottom: 40px; 
+    padding-top: 10px;
+    margin-bottom: -10px;
+  }
+  footer{
+    height: 500px;
+  }
+  .met li{
+    margin-top: -50px;
+  }
+  .shoe {
+    margin-left: 0;
+    width: auto;
+    padding: 10px 10px;
+  }
+
+  .feature {
+    margin-top: 0;
+    padding: 20px;
+  }
+
+  .las h2 {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  .bat {
+    margin: 20px 0;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .subscribe input {
+    width: 80%;
+  }
+
+  .subscribe button {
+    width: auto;
+  }
+
+  .testimonials h2 {
+    font-size: 24px;
+  }
 }
   </style>
 </head>
@@ -471,24 +624,25 @@ footer{
       <div class="come">
       <img src="assets/logo.svg">
       <P>
-      
-        <div class="o" style="margin-top: 50px;">
+        
+        <div class="o" style="margin-top: 10px;">
         <a href="#"><img src="assets/icon-facebook.svg"></a>
         <a href="#"><img src="assets/icon-youtube.svg"></a>
         <a href="#"><img src="assets/icon-twitter.svg"></a>
         <a href="#"><img src="assets/icon-pinterest.svg"></a>
-        <a href="#"><img src=".assets/icon-instagram.svg"></a>
+        <a href="#"><img src="assets/icon-instagram.svg"></a>
       </P>
       </div>
       </div>
     
-     
+       <div class="man">
        <div class="sat" style="justify-content: space-between;">
       <li><a href="#">Home</a></li>
       <li><a href="#">Pricing</a></li>
       <li><a href="#">products</a></li>
       <li><a href="#">About</a></li>
      </ul>
+    
      <div class="met">
      <ul>
       <li><a href="#">Careers</a></li>
@@ -496,6 +650,7 @@ footer{
       <li><a href="#">Privacy Policy</a></li>
      </ul>
      </div>
+       </div>
        </div>
     <div class="subscribe">
       <input type="email" placeholder="Updates in your inbox...">
