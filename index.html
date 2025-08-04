@@ -89,8 +89,16 @@ body {
       flex-wrap: wrap;
       justify-content: space-between;
       padding: 10px 10%;
-      align-items: center;
-      gap: 3px; 
+      flex-direction: column;
+      /* align-items: center;
+      gap: 3px;  */
+      
+    }
+    .top{
+      order: 0;
+    }
+    .bottom{
+      order: 1;
     }
     .container-text{
       max-width: 500px;
@@ -373,10 +381,11 @@ footer{
   .testimonial,
   .feature-list,
   .bar {
-    flex-direction: column;
+    
     align-items: center;
     text-align: center;
     gap: 10px;
+    
   }
 
   .g-container {
@@ -386,7 +395,9 @@ footer{
   .image {
     padding: 10px;
   }
-
+  .bar{
+    display: none;
+  }
   nav.bar {
     /* flex-direction: column; */
     gap: 15px;
@@ -395,7 +406,9 @@ footer{
   .get-started-btn {
     margin-top: 10px;
   }
-
+  .btn{
+    display: none;
+  }
   .container-text h1 {
     font-size: 22px;
   }
@@ -405,33 +418,41 @@ footer{
   }
 
   .container img {
-    margin-left: 0;
-    margin-top: 0;
+     margin-left: 0;
+    margin-top: 100px;
     width: 100%;
     max-width: 100%;
     height: auto;
+    flex-direction: column;
   }
-
+  .container{
+    flex-direction: column;
+    display: flex;
+  }
+  .top{
+    order: 1;
+  }
+  .bottom{
+    order: 0;
+  }
   .feature-item {
     padding-left: 0;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .feature-number {
-    margin-bottom: 10px;
   }
   .feature{
     margin-bottom: -20px;
-    top: 500px;
+    top: 50px;
+  
   }
   .feature-list{
-    margin-top: 50px;
+    margin-top: 20px;
+  }
+  .feature-item{
+    margin-top: -10px;
   }
   .testimonial {
-    display: flex;
-    flex-direction: column;
+    display: grid;  
+    /* flex-direction: column; */
     gap: 20px;
   }
 
@@ -440,34 +461,7 @@ footer{
     gap: 30px;
   }
 
-  .sat,
-  .met {
-    padding: 0;
-    margin: 0px;
-  }
-
-  .sat li,
-  .met li {
-    list-style: none;
-    margin: 10px 10px;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  .met li{
-    margin-left: 100px;
-  }
-  .sat li{
-    margin-right: 220px;
-    margin-bottom: 40px; 
-    padding-top: 10px;
-    margin-bottom: -10px;
-  }
-  footer{
-    height: 500px;
-  }
-  .met li{
-    margin-top: -50px;
-  }
+ 
   .shoe {
     margin-left: 0;
     width: auto;
@@ -487,25 +481,44 @@ footer{
   .bat {
     margin: 20px 0;
   }
-
+  .ba{
+    width: 120px;
+  }
   .subscribe {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     padding: 20px 0;
+    margin-top: -100px;
   }
 
   .subscribe input {
     width: 80%;
+    margin-top: -200px;
+    margin-right: -400px;
   }
 
   .subscribe button {
     width: auto;
+    margin-right: -650px;
+    margin-top: -40px;
+    width: 50px;
   }
 
   .testimonials h2 {
     font-size: 24px;
+  }
+  .come img{
+    margin-bottom: -50px;
+  }
+  .come a{
+   justify-content: space-between;
+   gap: 500px;
+  }
+  .shoe{
+    width: 100px;
+   margin-right: 400px;
   }
 }
   </style>
